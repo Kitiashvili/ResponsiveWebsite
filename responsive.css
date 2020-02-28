@@ -1,9 +1,6 @@
 @media screen and (max-width:1200px){
-    .cards{
+    .container{
         width: 950px;
-    }
-    .main-content{
-        width:950px;
     }
     .main-content .left-content {
         width: 620px;
@@ -12,18 +9,13 @@
 
 
 @media screen and (max-width:992px){
-    .cards{
-        width: 750px;
-    }
-
-    .main-content{
-        width:750px;
-    }
+  
     .main-content .left-content {
         width: 100%;
     }
-
-
+    .container{
+        width: 750px;
+    }
     .cards .card img{
         height: 50%;
     }
@@ -48,22 +40,46 @@
         color:black!important;
     }
     .navbar-toggler p {margin:0px;}
+
+    .main-content{
+        flex-direction: column;
+    }
+    .right-content{
+        width: 100%;
+    }
+    .min-nav ul{
+        width: 40%;
+    }
+    .footer-top{
+        flex-direction: column;
+    }
+    .footer-newsletter{
+        width: 100%;
+    }
+    .footer-instagram {
+        width: 100%;
+    }
+    .footer-instagram div img{
+        width: 25%;
+    }
+
+    .footer-bottom{
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width:768px){
+    .container{
+        width:100%;
+    }
     .slider-area {
         flex-wrap: wrap;
     }
     .slider-area .col-md-4 article:first-child {
         padding-bottom: 40px;
     } 
-
-    .main-content{
-        width:100%;
-    }
     .cards{
         flex-direction: column;
-        width: 100%;
         padding: 30px 15px;
     }
     .cards .card{
