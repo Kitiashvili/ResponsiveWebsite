@@ -681,7 +681,11 @@ footer{
     bottom: 30px;
 }
 
-.carousel-item img{
+.slider-area aside {
+    overflow: hidden;
+}
+.slider-area aside img{
     height: 500px !important;
     object-fit:cover;
 }
+
