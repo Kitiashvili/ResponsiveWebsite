@@ -86,5 +86,9 @@
       width: 100% !important;
       margin: 10px 0px;
     }
+    .min-nav ul{
+        width: 80%;
+    }
+    
 }
 

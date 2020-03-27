@@ -8,7 +8,7 @@
   <title>Janice</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -19,11 +19,11 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./responsive.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -130,12 +130,33 @@
     </nav>
   </header>
   <main>
-    <div id="fixed-cog">
-      <i class="fas fa-cog"></i>
+    <div class="slide-nav">
+      <h5>home layout</h5>
+      <div id="fixed-cog">
+        <i class="fas fa-cog"></i>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">home-default</li>
+        <li class="list-group-item">home1</li>
+        <li class="list-group-item">home2</li>
+        <li class="list-group-item">home3</li>
+        <li class="list-group-item">home4</li>
+        <li class="list-group-item">home5</li>
+        <li class="list-group-item">home6</li>
+      </ul>
+     
     </div>
-    <section class="slider-area">
+    <section id="carouselExampleControls" class="carousel slide slider-area" data-ride="carousel">
       <aside class="col-md-8">
-        <img src="http://janice.neptunetheme.com/wp-content/uploads/2018/01/adult-black-dress.jpg" alt="">
+        <div class="carousel-item active">
+          <img src="./assets/img2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img4.jpg" class="d-block w-100" alt="...">
+        </div>
       </aside>
       <aside class="col-md-4">
         <article>
@@ -152,9 +173,12 @@
           <button class="btn last-btn">continue reading</button>
         </article>
         <article class="arrows">
-          <i class="fas fa-chevron-left"></i>
-          <span>1/6</span>
-          <i class="fas fa-chevron-right"></i>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
         </article>
       </aside>
     </section>
@@ -458,6 +482,8 @@
       </article>
     </section>
   </footer>
+
+  <script src="displayLogic.js"></script>
 </body>
 
 </html>
